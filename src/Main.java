@@ -1,17 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        int a = 200;       // Начальный баланс
-        int b = 1500;       // Сумма пополнения
+        int initial_balance = 200;       // Начальный баланс
+        int addition = 1500;       // Сумма пополнения
 
-        if (b > 1000) {
-            int c = b / 100;
-            int x = a + b + c;
-            System.out.println(x + " Баланс");
-            System.out.println(c + " Бонусные рубли");
+        if (addition > 1000) {
+            int bonuses = addition / 100;
+            int final_balance = initial_balance + addition + bonuses;
+            System.out.println(final_balance + " Баланс");
+            System.out.println(bonuses + " Бонусные рубли");
         } else {
-            int x = a + b;
-            System.out.println(x + " Баланс");
+            int final_balance = initial_balance + addition;
+            System.out.println(final_balance + " Баланс");
         }
 
     }
